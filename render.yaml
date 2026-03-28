@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: saarthi-compute-api
+    runtime: python
+    region: oregon
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: cd backend/api && uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11"
+      - key: EXA_API_KEY
+        sync: false
+      - key: APIFY_TOKEN
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: CONVEX_URL
+        sync: false
