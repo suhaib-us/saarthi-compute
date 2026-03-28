@@ -1,0 +1,33 @@
+# Python
+backend/venv/
+backend/.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# Environment / Secrets
+.env
+.env.local
+.env.production
+
+# Node
+node_modules/
+dist/
+
+# Convex
+.convex/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Data (local learning store)
+backend/data/task_history.json
+
+# Lock files from Convex AI setup
+skills-lock.json
